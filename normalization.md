@@ -115,4 +115,4 @@ To analyze and normalize the initial database schema for a property rental syste
 
 ---
 
-
+[CONSULT THE ER DIAGRAM NORMALIZE](https://drive.google.com/file/d/1AuezUt_4JLXioDgEH7MehzdxZcLG6cRx/view?usp=sharing)
