@@ -78,7 +78,7 @@ To analyze and normalize the initial database schema for a property rental syste
 
 ### User
 - `user_id` (PK)
-- `first_name`, `last_name`, `email`, `password_hash`
+- `first_name`, `last_name`, `email`, `password`
 - `phone_number`
 - `role_id` (FK → Role)
 
@@ -89,13 +89,13 @@ To analyze and normalize the initial database schema for a property rental syste
 ### Property
 - `property_id` (PK)
 - `host_id` (FK → User)
-- `name`, `description`
+- `name`, `description`, `price_per_night`
 - `address_id` (FK → Address)
 - `category_id` (FK → Property_Category)
 
 ### Address
 - `address_id` (PK)
-- `street`, `city`, `state`, `zip_code`, `country`
+- `street`, `city`, `state_province`, `country`
 
 ### Property_Category
 - `category_id` (PK)
@@ -106,7 +106,7 @@ To analyze and normalize the initial database schema for a property rental syste
 - `property_id` (FK → Property)
 - `user_id` (FK → User)
 - `start_date`, `end_date`
-- `price_per_night_snapshot`, `total_price`
+- `total_price`
 - `guest_count`
 - `status`
 
